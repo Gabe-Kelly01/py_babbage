@@ -1,16 +1,44 @@
 # py_babbage
+All registors and axis store an array of length 40 base 10 ints. Reads from "punch cards"
+
+https://www.fourmilab.ch/babbage/contents.html
+
 TODO
+
 -MILL-
--addend register
--accumulator register
--carry register
--reader register
+
+1)addend register
+
+2)accumulator register
+
+3)carry register
+
+4)reader register
+
 -INSTRUCTION SET-
--ADD
--SUBTRACT
--MULTIPLY
--DIVIDE
--LOAD-
-STORE
+
+1)ADD
+
+2)SUBTRACT
+
+3)MULTIPLY
+
+4)DIVIDE
+
+5)LOAD
+
+6)STORE
+
 -STORE-
--Axis stack
+
+1)Axis stack
+
+-I/O-
+
+1)command reader
+		
+		a) punch cards
+		
+		b)Number, command, variable cards
+		
+2)printer
