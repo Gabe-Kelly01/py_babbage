@@ -24,6 +24,7 @@ if __name__ == '__main__':
     addedArray = babbageAdder(inputAddend,inputAccumulator)
     for x in addedArray:
         print(x)
+
 #TEST INPUT
 #0+0 = a1: 0, a2: 0, c: 0
 #0+1 = a1: 0, a2: 1, c: 0
