@@ -6,7 +6,7 @@
 
 #babbage adder func
 def babbageAdder(addend, accumulator):
-    #loops till addend is 0, if accumulator > 9 then carry = 0
+    #loops till addend is 0, if accumulator > 9 then carry = 1 
     carry = 0
     while(addend != 0):
         accumulator = accumulator + 1
@@ -14,16 +14,19 @@ def babbageAdder(addend, accumulator):
         if accumulator > 9:
             carry = 1
             accumulator = 0
-
-    print("addend: ", addend)
-    print("accumulator: ", accumulator)
-    print("carry: ", carry)
+    returnArray = [addend, accumulator, carry]
+    return returnArray 
  
-#main func
+#TEST main func
 if __name__ == '__main__':
-    try:
-        inputAddend = int(input("Addend [0-9]: "))
-        inputAccumulator = int(input("Accumulator [0-9]: "))
-        babbageAdder(inputAddend,inputAccumulator)
-    except:
-        print("Invalid input ya fucking piece of shit")
+    inputAddend = int(input("Addend [0-9]: "))
+    inputAccumulator = int(input("Accumulator [0-9]: "))
+    addedArray = babbageAdder(inputAddend,inputAccumulator)
+    for x in addedArray:
+        print(x)
+#TEST INPUT
+#0+0 = a1: 0, a2: 0, c: 0
+#0+1 = a1: 0, a2: 1, c: 0
+#1+0 = a1: 0, a2: 1, c: 0
+#1+1 = a1: 0, a2: 2, c: 0
+#9+9 = a1: 0, a2: 8, c: 1 
